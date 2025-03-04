@@ -1,0 +1,25 @@
+{
+  "name": "crud_using_express_js",
+  "version": "1.0.0",
+  "description": "A CRUD API using Express.js with MongoDB or PostgreSQL, following best practices with validation, security, and error handling.",
+  "homepage": "https://github.com/icac30sauravmistri/CRUD_using_Express_JS#readme",
+  "bugs": {
+    "url": "https://github.com/icac30sauravmistri/CRUD_using_Express_JS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icac30sauravmistri/CRUD_using_Express_JS.git"
+  },
+  "license": "ISC",
+  "author": "SauravMistri",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.0"
+  }
+}
