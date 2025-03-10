@@ -1,0 +1,32 @@
+{
+  "name": "crud_using_express_js",
+  "version": "1.0.0",
+  "description": "Learning CRUD in node.js using express.js framework and mongodb database server",
+  "homepage": "https://github.com/icac30sauravmistri/CRUD_using_Express_JS#readme",
+  "bugs": {
+    "url": "https://github.com/icac30sauravmistri/CRUD_using_Express_JS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icac30sauravmistri/CRUD_using_Express_JS.git"
+  },
+  "license": "ISC",
+  "author": "Saurav Mistri",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "dev": "nodemon app/index.js",
+    "format": "prettier --write .",
+    "env": "cp .env.example .env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
