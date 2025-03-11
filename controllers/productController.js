@@ -43,7 +43,24 @@ const product_create = async (req, res) => {
 
 // Update Product
 
-const product_update = async (req, res) => { };
+const product_update = async (req, res) => {
+    try {
+        const product = {
+            title: req.body.title,
+            price: req.body.price,
+            image: req.body.image,
+            details: req.body.details
+        };
+
+        const updateProduct = await Product.findByIdAndUpdate(
+            { _id: req.params.productId },
+            product
+        );
+        res.send(updateProduct);
+    } catch (err) {
+        res.status(400).send(err);
+    }
+};
 
 // Delete Product
 const product_delete = async (req, res) => { };

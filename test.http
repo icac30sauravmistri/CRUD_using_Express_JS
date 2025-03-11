@@ -16,3 +16,16 @@ Content-Type: application/json
 "image": "image_url_of_product",
 "details": "add_product_by_create_method"
 }
+
+
+### UPDATE PRODUCT
+# POST http://localhost:3000/api/products/<product_id> HTTP/1.1
+PUT http://localhost:3000/api/products/67d08e1007cde81c736ed3ea HTTP/1.1
+Content-Type: application/json
+
+{
+"title": "add_product_by_update_method_1",
+"price": "5000",
+"image": "update_image_url_of_product",
+"details": "add_product_by_update_method"
+}
