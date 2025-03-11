@@ -2,22 +2,22 @@ const Product = require('../models/Product.js');
 
 // Get All Products
 
-const product_all = (req, res) => { };
+const product_all = async (req, res) => { };
 
 // Single Productf
 
-const product_details = (req, res) => { };
+const product_details = async (req, res) => { };
 
 // Add New Product
 
-const product_create = (req, res) => { };
+const product_create = async (req, res) => { };
 
 // Update Product
 
-const product_update = (req, res) => { };
+const product_update = async (req, res) => { };
 
 // Delete Product
-const product_delete = (req, res) => { };
+const product_delete = async (req, res) => { };
 
 module.exports = {
     product_all,
