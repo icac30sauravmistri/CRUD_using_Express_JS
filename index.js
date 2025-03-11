@@ -15,6 +15,9 @@ try {
     process.exit();
 };
 
+// Middlewares
+app.use(express.json());
+
 // route middlewares
 app.use('/api/products', productRoutes);
 

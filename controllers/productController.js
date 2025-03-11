@@ -25,7 +25,21 @@ const product_details = async (req, res) => {
 
 // Add New Product
 
-const product_create = async (req, res) => { };
+const product_create = async (req, res) => {
+    const product = new Product({
+        title: req.body.title,
+        price: req.body.price,
+        image: req.body.image,
+        details: req.body.details
+    });
+
+    try {
+        const saveProduct = await product.save();
+        res.send(saveProduct);
+    } catch (err) {
+        res.status(400).send(err);
+    }
+};
 
 // Update Product
 
