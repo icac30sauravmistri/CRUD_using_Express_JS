@@ -2,7 +2,15 @@ const Product = require('../models/Product.js');
 
 // Get All Products
 
-const product_all = async (req, res) => { };
+const product_all = async (req, res) => {
+    try {
+        const products = await Product.find();
+        res.json(products);
+    }
+    catch (error) {
+        res.json({ message: error });
+    }
+};
 
 // Single Productf
 
