@@ -63,7 +63,14 @@ const product_update = async (req, res) => {
 };
 
 // Delete Product
-const product_delete = async (req, res) => { };
+const product_delete = async (req, res) => {
+    try {
+        const removeProduct = await Product.findByIdAndDelete(req.params.productId);
+        res.json(removeProduct);
+    } catch (err) {
+        res.json({ message: err });
+    }
+};
 
 module.exports = {
     product_all,

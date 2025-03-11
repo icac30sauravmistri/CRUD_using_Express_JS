@@ -29,3 +29,7 @@ Content-Type: application/json
 "image": "update_image_url_of_product",
 "details": "add_product_by_update_method"
 }
+
+### DELETE PRODUCT
+# DELETE http://localhost:3000/api/products/<product_id> HTTP/1.1
+DELETE http://localhost:3000/api/products/67d08e1007cde81c736ed3ea HTTP/1.1
