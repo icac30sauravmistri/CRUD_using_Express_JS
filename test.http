@@ -1,3 +1,7 @@
 ### GET ALL PRODUCTS
 
 GET http://localhost:3000/api/products HTTP/1.1
+
+### GET SINGLE PRODUCT
+GET http://localhost:3000/api/products/<PRODUCT_ID> HTTP/1.1
+# GET http://localhost:3000/api/products/67d088b7686fbb098a850fc6 HTTP/1.1

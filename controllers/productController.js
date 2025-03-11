@@ -14,7 +14,14 @@ const product_all = async (req, res) => {
 
 // Single Productf
 
-const product_details = async (req, res) => { };
+const product_details = async (req, res) => {
+    try {
+        const product = await Product.findById(req.params.productId);
+        res.json(product);
+    } catch (err) {
+        res.json({ message: err });
+    }
+};
 
 // Add New Product
 
